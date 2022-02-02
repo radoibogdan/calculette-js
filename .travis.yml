@@ -14,4 +14,5 @@ env:
   - NODE_ENV=test
 
 script: 
-  - npm test
+  - npm run test
+  - npm run coverage

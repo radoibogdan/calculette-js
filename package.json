@@ -4,16 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "nyc --reporter=html --reporter=text mocha",
     "coverage": "nyc check-coverage --per-file --branches 80 --functions 80 --lines 80 --statements 80"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "esm": "^3.2.25",
-    "mocha": "^9.2.0"
-  },
-  "dependencies": {
+    "mocha": "^9.2.0",
     "nyc": "^15.1.0"
   }
 }

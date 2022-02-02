@@ -151,7 +151,7 @@ describe('Calculette', function() {
     it('should throw error when divided value is 0', function() {
       calc = new Calculette()
       calc.set(0)
-      const expectedError = new Error("Cannot divide by 0");
+      const expectedError = new Error("Cannot divide 0 by a number");
         assert.throws(() => {
           calc.divide(10)
         }, expectedError);
